@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About me</title>
+  <style>
+    /* 調整框線 */
+    td.border-align {
+      border-right: 1px solid black; /* 設定右邊框線樣式 */
+      padding: 5px; /* 調整儲存格內邊距 */
+    }
+  </style>
+</head>
+<body>
+
+<table border="1">
+  <tr>
+    <td colspan="3" style="text-align: center;"><b>About - 111304016<b></td>
+  </tr>
+  <tr>
+    <td rowspan="3"><img src="Personal Photo.jpg" width="100" height="100" alt="Personal Photo"><br>Personal Photo</td>
+    <td colspan="2" class="border-align">Name: <input type="text"><br>Gender: 
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other
+    </td>
+  </tr>
+  <tr>
+    <td class="border-align">Country:
+      <select>
+        <option value="Taipei">Taipei</option>
+        <option value="Tainan">Tainan</option>
+        <option value="Taichung">Taichung</option>
+        <option value="Taoyuan">Taoyuan</option>
+      </select>
+    </td>
+    <td class="border-align">Birthday: <input type="date"></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="border-align">E-mail: <input type="text"></td>
+  </tr>
+  <tr>
+    <td class="border-align">Hobby</td>
+    <td colspan="2" class="border-align">
+      <input  type="checkbox" id="swimming"><label for="swimming">Swimming</label>
+      <input type="checkbox" id="volleyball"><label for="volleyball">Volleyball</label>
+      <input type="checkbox" id="movie"><label for="movie">Movie</label>
+      <input type="checkbox" id="game"><label for="game">Game</label>
+      <input type="checkbox" id="sleep"><label for="sleep">Sleep</label>
+    </td>
+  </tr>
+  <tr>
+    <td class="border-align">Skill</td>
+    <td colspan="2" class="border-align">
+      <input type="checkbox" id="java"><label for="java">Java</label>
+      <input type="checkbox" id="html"><label for="html">HTML</label>
+      <input type="checkbox" id="python"><label for="python">Python</label>
+      <input type="checkbox" id="office"><label for="office">Microsoft Office</label>
+      <input type="checkbox" id="premiere"><label for="premiere">Premiere</label>
+    </td>
+  </tr>
+  <tr>
+    <td class="border-align">Say something</td>
+    <td colspan="2" class="border-align"><input type="text" placeholder="Say something here."></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="border-align">
+      <button onclick="submitForm()">提交</button>
+      <button onclick="resetForm()">重設</button>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
